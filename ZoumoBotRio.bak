@@ -29,7 +29,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:ZoumoBotRio-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -309,48 +308,37 @@ $EndSheet
 $Comp
 L BARREL_JACK CON1
 U 1 1 59FB4EA9
-P 900 1100
-F 0 "CON1" H 900 1350 50  0000 C CNN
-F 1 "BARREL_JACK" H 900 900 50  0000 C CNN
-F 2 "Connectors:Barrel_Jack_CUI_PJ-102AH" H 900 1100 50  0001 C CNN
-F 3 "" H 900 1100 50  0000 C CNN
-	1    900  1100
-	1    0    0    -1  
+P 2425 725
+F 0 "CON1" H 2425 975 50  0000 C CNN
+F 1 "BARREL_JACK" H 2275 1050 50  0000 C CNN
+F 2 "Connectors:Barrel_Jack_CUI_PJ-102AH" H 2425 725 50  0001 C CNN
+F 3 "" H 2425 725 50  0000 C CNN
+	1    2425 725 
+	-1   0    0    1   
 $EndComp
 $Comp
 L Q_PMOS_GDS Q1
 U 1 1 59FB50B1
-P 1500 900
-F 0 "Q1" V 1450 1025 50  0000 L CNN
-F 1 "Q_PMOS_GDS" V 1725 700 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:TO-252-2_Rectifier" H 1700 1000 50  0001 C CNN
-F 3 "" H 1500 900 50  0000 C CNN
-	1    1500 900 
-	0    1    1    0   
-$EndComp
-$Comp
-L GND #PWR07
-U 1 1 59FB5558
-P 1450 1200
-F 0 "#PWR07" H 1450 950 50  0001 C CNN
-F 1 "GND" H 1450 1050 50  0000 C CNN
-F 2 "" H 1450 1200 50  0000 C CNN
-F 3 "" H 1450 1200 50  0000 C CNN
-	1    1450 1200
-	1    0    0    -1  
+P 1550 925
+F 0 "Q1" V 1475 750 50  0000 L CNN
+F 1 "12v Regulator" V 1800 700 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:TO-252-2_Rectifier" H 1750 1025 50  0001 C CNN
+F 3 "" H 1550 925 50  0000 C CNN
+	1    1550 925 
+	0    -1   -1   0   
 $EndComp
 $Comp
 L GND #PWR08
 U 1 1 59FB60F1
-P 1300 700
-F 0 "#PWR08" H 1300 450 50  0001 C CNN
-F 1 "GND" H 1300 550 50  0000 C CNN
-F 2 "" H 1300 700 50  0000 C CNN
-F 3 "" H 1300 700 50  0000 C CNN
-	1    1300 700 
+P 1550 1250
+F 0 "#PWR08" H 1550 1000 50  0001 C CNN
+F 1 "GND" H 1550 1100 50  0000 C CNN
+F 2 "" H 1550 1250 50  0000 C CNN
+F 3 "" H 1550 1250 50  0000 C CNN
+	1    1550 1250
 	1    0    0    -1  
 $EndComp
-Text GLabel 2500 1000 2    60   Input ~ 0
+Text GLabel 850  825  0    60   Input ~ 0
 +12V
 Text Label 3900 4375 2    60   ~ 0
 Reset
@@ -721,13 +709,13 @@ $EndComp
 $Comp
 L NeoPixel LED6
 U 1 1 5A003FD6
-P 10500 1200
-F 0 "LED6" H 10500 1350 60  0000 C CNN
-F 1 "NeoPixel" H 10500 1000 60  0000 C CNN
-F 2 "NeoPixel:WS2812B_smallsilk" H 10500 1300 60  0001 C CNN
-F 3 "" H 10500 1300 60  0001 C CNN
-	1    10500 1200
-	-1   0    0    -1  
+P 10550 1200
+F 0 "LED6" H 10550 1350 60  0000 C CNN
+F 1 "NeoPixel" H 10550 1000 60  0000 C CNN
+F 2 "NeoPixel:WS2812B_smallsilk" H 10550 1300 60  0001 C CNN
+F 3 "" H 10550 1300 60  0001 C CNN
+	1    10550 1200
+	1    0    0    -1  
 $EndComp
 Text Notes 9050 1600 0    60   ~ 0
 RGB LEDS
@@ -1085,24 +1073,24 @@ LED Power Indicators
 $Comp
 L Polyfuse_Small F1
 U 1 1 5A042905
-P 2300 1000
-F 0 "F1" V 2225 1000 50  0000 C CNN
-F 1 "Polyfuse" V 2375 1000 50  0000 C CNN
-F 2 "Resistors_SMD:R_1812_HandSoldering" H 2350 800 50  0001 L CNN
-F 3 "https://www.digikey.com/product-detail/en/littelfuse-inc/1812L150-16DR/F4240CT-ND/3305587" H 2300 1000 50  0001 C CNN
-	1    2300 1000
-	0    1    1    0   
+P 1975 825
+F 0 "F1" V 1875 850 50  0000 C CNN
+F 1 "Polyfuse" V 1800 725 50  0000 C CNN
+F 2 "Resistors_SMD:R_1812_HandSoldering" H 2025 625 50  0001 L CNN
+F 3 "https://www.digikey.com/product-detail/en/littelfuse-inc/1812L150-16DR/F4240CT-ND/3305587" H 1975 825 50  0001 C CNN
+	1    1975 825 
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Jumper_NO_Small JP2
 U 1 1 5A043F42
-P 1950 1000
-F 0 "JP2" H 1950 1080 50  0000 C CNN
-F 1 "PWR SW" H 1960 940 50  0000 C CNN
-F 2 "SlideSW:Slide SW" H 1950 1000 50  0001 C CNN
-F 3 "" H 1950 1000 50  0000 C CNN
-	1    1950 1000
-	1    0    0    -1  
+P 1100 825
+F 0 "JP2" H 1100 905 50  0000 C CNN
+F 1 "Power Switch" H 1100 975 50  0000 C CNN
+F 2 "SlideSW:Slide SW" H 1100 825 50  0001 C CNN
+F 3 "" H 1100 825 50  0000 C CNN
+	1    1100 825 
+	-1   0    0    1   
 $EndComp
 $Comp
 L R_Small R7
@@ -1368,18 +1356,6 @@ Wire Wire Line
 	6325 2925 6200 2925
 Wire Wire Line
 	6200 2825 6325 2825
-Wire Wire Line
-	1200 1100 1200 1200
-Wire Wire Line
-	1200 1200 1450 1200
-Wire Wire Line
-	1200 1000 1300 1000
-Wire Wire Line
-	1300 700  1300 625 
-Wire Wire Line
-	1300 625  1500 625 
-Wire Wire Line
-	1500 625  1500 700 
 Wire Wire Line
 	3650 4125 3650 4375
 Wire Wire Line
@@ -1734,11 +1710,9 @@ Wire Wire Line
 Wire Wire Line
 	1400 4975 1400 4900
 Wire Wire Line
-	2400 1000 2500 1000
+	1200 825  1350 825 
 Wire Wire Line
-	1850 1000 1700 1000
-Wire Wire Line
-	2050 1000 2200 1000
+	1000 825  850  825 
 Wire Wire Line
 	2350 3525 2700 3525
 Wire Wire Line
@@ -1968,5 +1942,21 @@ Wire Wire Line
 	3750 6050 3750 6175
 Connection ~ 3750 6100
 Text Label 3550 5775 2    60   ~ 0
-digitalGround
+dGnd
+Wire Wire Line
+	1550 1125 1550 1250
+Wire Wire Line
+	2125 725  1825 725 
+Wire Wire Line
+	1825 625  1825 1175
+Wire Wire Line
+	1825 1175 1550 1175
+Connection ~ 1550 1175
+Wire Wire Line
+	2125 625  1825 625 
+Connection ~ 1825 725 
+Wire Wire Line
+	1750 825  1875 825 
+Wire Wire Line
+	2125 825  2075 825 
 $EndSCHEMATC
